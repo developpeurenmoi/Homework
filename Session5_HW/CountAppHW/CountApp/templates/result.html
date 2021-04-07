@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h2>입력한 텍스트</h2>
+    <p> {{text}}</p>
+    <h2>공백 포함 글자수</h2>
+    <p> {{total_len}}자</p>
+    <h2>공백 제외 글자수</h2>
+    <p> {{no_space_len}}자</p>
+    <h2>단어수</h2>
+    <p> {{word_count}}단어</p>
+    <h6>© All Rights Reserved</h6>
+</body>
+</html>

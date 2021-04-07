@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'count.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+</head>
+<body>
+    <h1>글자를 입력해 보세요!</h1>
+    <h2>Entrez les caractères.</h2>
+    <form action="{% url 'result' %}" method="POST">{% csrf_token %}
+        <textarea name="text" id="" cols="50" rows="20"></textarea>
+        <br>
+        <label for ="submit">아래를 눌러 제출하기</label><br>
+        <input type="submit" id="submit" value="dépôt">
+    </form>
+</body>
+</html>

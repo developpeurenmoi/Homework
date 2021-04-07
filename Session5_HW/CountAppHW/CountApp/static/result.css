@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    background-color: rgb(238, 238, 238);
+}
+body{
+    margin:auto;
+    /* margin-left: 200px; */
+    /* margin-top: 50px; */
+    width: 800px;
+    
+    
+}
+h2 {
+    font-family: 'KyoboHand';
+}
+p {
+    color: rgb(43, 43, 43);
+    font-family: 'KyoboHand';
+    font-size: larger;
+    background-color: white;
+    height: 100px;
+    /* text-align: center; */
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+h6 {
+    color: rgb(141, 141, 141);
+    font-size: small;
+    font-family: 'KyoboHand';
+}
