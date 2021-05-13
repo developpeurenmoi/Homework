@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
     {% load static %}
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link href="{% static 'edit.css' %}" rel="stylesheet">
 </head>
 <body>
@@ -16,21 +16,21 @@
         <table>
             <tbody>
                 <tr>
-                    <th>제목</th>
+                    <th>Title</th>
                     <td><input type="text" name="title" placeholder="제목을 입력해주세요." value="{{todo.title}}"></td>
                 </tr>
                 <tr>
-                    <th>내용</th>
+                    <th>Content</th>
                     <td><textarea name="content" cols="30" rows="10" placeholder="내용을 입력해주세요.">{{todo.content}}</textarea></td>
                 </tr>
                 <tr>
-                    <th>마감일</th>
+                    <th>Due</th>
                     <td><input type="date" name="deadline" value="{{todo.deadline | date:'Y-m-d'}}"></td>
                 </tr>
             </tbody>
         </table>
         <div class="button-class">
-            <button type="submit">수정하기</button>
+            <button type="submit">Submit</button>
         </div>
         
     </form>

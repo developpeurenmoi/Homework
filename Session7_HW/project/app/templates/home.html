@@ -6,7 +6,7 @@
     <title>Home</title>
     {% load static %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link href="{% static 'home.css' %}" rel="stylesheet">
 </head>
 <body>
@@ -15,13 +15,13 @@
       <table>
           <thead>
               <tr>
-                  <th>Comeback Scheduler</th>
+                  <th>🌳동물의 숲🌳</th>
               </tr>
           </thead>
           <tbody>
               {% for todo in todos %}
               <tr>
-                  <td><a href="{% url 'detail' todo.pk %}">✓ {{todo.title}} [D-{{todo.remain}}]</a></td>
+                  <td><a href="{% url 'detail' todo.pk %}">⁑ {{todo.title}} [D-{{todo.remain}}]</a></td>
               </tr>
               {% endfor %}
           </tbody>
