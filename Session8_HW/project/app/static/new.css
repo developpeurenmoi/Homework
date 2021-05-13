@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    color: rgb(32, 32, 32);
+    font-family: 'KyoboHand', sans-serif;
+  }
+  
+  h1 {
+    padding: 7px 20px 7px 20px;
+    background-color: rgba(99, 60, 36, 0.9);
+    color: rgba(255, 201, 72, 1);
+  }
+  
+  table{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'KyoboHand', sans-serif;
+    font-size: 25px;
+    background-color: rgba(240, 248, 255, 0.5);
+  }
+  
+  th, td{
+    padding-bottom: 13px;
+  }
+  
+  th{
+    padding-right: 15px;
+  }
+  
+  input, textarea{
+    border-radius: 5%;
+    border-color: rgb(145, 139, 141);
+    font-family: 'KyoboHand', sans-serif;
+    font-size: 15px;
+  }
+  
+  button{
+    background-color: rgba(99, 60, 36, 1);
+    color: rgba(255, 201, 72, 1);
+    padding: 7px 15px 7px 15px;
+    font-family: 'KyoboHand', sans-serif;
+    font-size: 15px;
+    border-radius: 10%;
+  }
+  
+  .button-class{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.5);
+  }
+
+  @font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-size: cover;
+  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/games/switch/a/animal-crossing-new-horizons-switch/animal-crossing-new-horizons-switch-hero.jpg);
+}
