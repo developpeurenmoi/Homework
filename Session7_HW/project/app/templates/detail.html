@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="{% static 'new.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1>Task Detail</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th><strong>Title</strong></th>
+                <td>{{todo.title}}</td>
+            </tr>
+            <tr>
+                <th><strong>Content</strong></th>
+                <td>{{todo.content}}</td>
+            </tr>
+            <tr>
+                <th><strong>Due</strong></th>
+                <td>{{todo.deadline | date:'Y-m-d'}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="a-class">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'edit' todo.pk %}">Add</a>
+        <a href="{% url 'delete' todo.pk %}">Delete</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    background-color: #ffeef0;
+    color: rgb(71, 68, 69);
+    font-family: 'Nanum Pen Script', cursive;
+  }
+  
+  h1 {
+    font-family: 'Itim', cursive;
+    padding: 7px 20px 7px 20px;
+    background-color: rgba(248, 109, 128, 0.856);
+    color: white;
+  }
+  
+  table{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+  }
+  
+  th, td{
+    padding-bottom: 13px;
+  }
+  
+  th{
+    padding-right: 15px;
+  }
+  
+  input, textarea{
+    border-radius: 5%;
+    border-color: rgb(145, 139, 141);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 15px;
+  }
+  
+  button{
+    background-color: rgba(248, 109, 128, 0.856);
+    color: white;
+    padding: 7px 15px 7px 15px;
+    border-color: rgba(248, 109, 128, 0.856);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 15px;
+    border-radius: 10%;
+  }
+  
+  .button-class{
+    display: flex;
+    justify-content: center;
+  }
