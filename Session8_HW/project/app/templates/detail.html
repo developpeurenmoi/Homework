@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail</title>
+{% extends 'base.html' %}
+{% block css %}
     {% load static %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link href="{% static 'detail.css' %}" rel="stylesheet">
-</head>
-<body>
-    <h1>Task Detail</h1>
+   <link href="{% static 'detail.css' %}" rel="stylesheet">
+{% endblock css %}
+
+<!-- {% block title %}
+<a class="title_a" href="{% url 'home' %}">Animal Crossing</a>
+{% endblock title %} -->
+
+{% block content %}
     <table>
         <tbody>
             <tr>
@@ -29,25 +27,28 @@
     </table>
     <div class="a-class">
         <a href="{% url 'home' %}">Home</a>
+        {% if user.is_authenticated adn post.author.pk == user.pk %}
         <a href="{% url 'edit' todo.pk %}">Edit</a>
         <a href="{% url 'delete' todo.pk %}">Delete</a>
+        {% endif %}
     </div>
-
-    <form method = "POST">
+    {% if user.is_authenticated %}
+    <form method="POST">
         {% csrf_token %}
-        <input type = 'text' name='content' placeholder='댓글을 입력해주세요.'>
+        <input type='text' name='content' placeholder=''>
         <button type='submit'>Save</button>
     </form>
+    {% endif %}
 
     <div class='ul'>
         <ul>
             {% for comment in todo.comments.all %}
-            <li>
-                {{comment.content}}
+            <li>{{comment.content}}</li>
+            {% if user.is_authenticated and comment.author.pk == user.pk %}
                 <a class='delete_a' href="{% url 'delete_comment' todo.pk comment.pk %}">Delete</a>
-            </li>
+            {% endif %}
+            {% endfor %}
         </ul>
     </div>
 
-</body>
-</html>
+{% endblock content %}

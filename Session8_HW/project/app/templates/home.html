@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+{% extends 'base.html' %}
+{% block css%}
     {% load static %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"> -->
     <link href="{% static 'home.css' %}" rel="stylesheet">
-</head>
-<body>
-    <h1>TO DO LIST</h1>
+{% endblock %}
+
+<!-- {% block title %}
+<a class="title_a" href="{% url 'home' %}">Animal Crossing</a>
+{% endblock title %} -->
+
+
+{% block content %}
     <div class="div-table">
       <table>
           <thead>
@@ -30,5 +31,4 @@
     <div class="div-links">
       <a href="{% url 'new' %}">Add+</a>
     </div>
-</body>
-</html>
+{% endblock content %}

@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    color: rgb(32, 32, 32);
+    color: rgb(104, 100, 101);
     font-family: 'KyoboHand', sans-serif;
   }
   
@@ -17,7 +17,7 @@
     padding-top: 50px;
     padding-bottom: 30px;
     font-size: 25px;
-    background-color: rgba(240, 248, 255, 0.5);
+    /* background-color: rgba(240, 248, 255, 0.5); */
   }
   
   th, td{
@@ -39,14 +39,14 @@
     background-color: rgba(99, 60, 36, 1);
     color: rgba(255, 201, 72, 1);
     padding: 7px 15px 7px 15px;
-    font-size: 15px;
-    border-radius: 10%;
+    font-size: 18px;
+    border-radius: 5px;
   }
   
   .button-class{
     display: flex;
     justify-content: center;
-    background-color: rgba(240, 248, 255, 0.5);
+    /* background-color: rgba(240, 248, 255, 0.5); */
   }
 
   @font-face {
@@ -57,6 +57,8 @@
 }
 
 body {
+  background-color: rgba(240, 248, 255, 0.3);
   background-size: cover;
   background-image: url(https://www.nintendo.com/content/dam/noa/en_US/games/switch/a/animal-crossing-new-horizons-switch/animal-crossing-new-horizons-switch-hero.jpg);
+  background-blend-mode:screen;
 }
